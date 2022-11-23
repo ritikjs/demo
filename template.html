@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+     
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+        * {
+      font-family: 'Open Sans', Arial, sans-serif;
+        }
+
+        .main-div {
+            width: 595px;
+            margin: auto;
+        }
+
+        .slip-header {      
+            border-bottom: 2px solid black;          
+        }
+
+        
+
+        .slip-header>h3 {
+            margin-top: auto;
+            /* font-weight: 600; */
+            font-size: 14px;
+        }
+
+
+        .slip-part-first {
+            padding: 20px;
+        }
+
+        .companydetails-div {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 11px;
+            /* font-weight: 500; */
+              display: -webkit-flex;
+            display: -webkit-box;
+            -webkit-box-pack: space-between;
+        }
+
+        .companydetails-div>div {
+            width: 50%;
+        }
+
+
+        .slip-part-earnings {
+            border: 1px solid black;
+            padding: 20px;
+            margin:10px 0px;
+        }
+
+        .slip-part-earnings>h3 {
+            margin: 0;
+            color: black;
+            text-align: center;
+            /* font-weight: 600; */
+            font-size: 14px;
+        }
+
+        .earning {
+            margin-top: 5px;
+            border-top: 1.5px solid black;
+        }
+
+        .earningd-div {
+            display: flex;
+        
+            justify-content: space-between;
+            width: 100%;
+            font-size: 11px;
+            /* font-weight: 500; */
+            display: -webkit-flex;
+            display: -webkit-box;
+            -webkit-box-pack: space-between;          
+        }
+        .earningd-div>div{
+                width: 49%;
+            } 
+
+
+        .first-div{
+            width:50%;
+            text-align: left;
+        }
+
+        .second-div{
+          
+            text-align: right;
+        }
+
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="main-div" style="width: 595px; margin: auto;" >
+        <div class="slip-header" >
+                <h3>Pay Slip({{data.employeeName}}, September 20222)</h3>
+        </div>
+        <div class="slip-part-first">
+            <div  class="companydetails-div">
+                <div>Company Name</div>
+                <div>Medhya Tech OPC PRIVATR</div>
+            </div>
+            <div  class="companydetails-div">
+                <div>Employee Code</div>
+                <div>{{data.employeeCode}}</div>
+            </div>
+            <div  class="companydetails-div">
+                <div>Date Of Birth</div>
+                <div>25/07/2001</div>
+            </div>
+            <div  class="companydetails-div">
+                <div>PAN</div>
+                <div>DFFGSXDD</div>
+            </div>
+            <div  class="companydetails-div">
+                <div>Date Of Joining</div>
+                <div>26/08/2022</div>
+            </div>
+            <!-- <div class="companydetails-div">
+                <div>Employee Code</div>
+                <div>0000</div>
+            </div> -->
+            <div  class="companydetails-div">
+                <div>Unit Name</div>
+                <div>xxxxxx</div>
+            </div>
+            <div class="companydetails-div">
+                <div>Unit Code</div>
+                <div>xxxxxx</div>
+            </div>
+            <div class="companydetails-div">
+                <div>EPFO Number</div>
+                <div>xxxxxx</div>
+            </div>
+            <div class="companydetails-div">
+                <div>PF No</div>
+                <div>1013</div>
+            </div>
+            <div class="companydetails-div">
+                <div>ESIC Number</div>
+                <div>xxxxxx</div>
+            </div>
+            <!-- <div class="companydetails-div">
+                <div>Employee Code</div>
+                <div>1013</div>
+            </div> -->
+
+            <div class="companydetails-div">
+                <div>Account No</div>
+                <div> 1112345252226 </div>
+            </div>
+            <div class="companydetails-div">
+                <div>Bank Name</div>
+                <div>ICICI Bank</div>
+            </div>
+            <div class="companydetails-div">
+                <div>Bank Branch</div>
+                <div>delhi</div>
+            </div>
+        </div>
+        <div class="slip-part-earnings">
+            <h3>EARNINGS</h3>
+            <div class="earningd-div" >
+                <div class="first-div">Basic Salary</div>
+                <div class="second-div">16668</div>
+            </div>
+            <div class="earningd-div" >
+                <div class="first-div">Fixed Dearness Allowance</div>
+                <div class="second-div" >10416</div>
+            </div>
+            <div class="earningd-div" >
+                <div class="first-div">Variable Dearness Allowance </div>
+                <div class="second-div" >0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">House Rent Allowance</div>
+                <div class="second-div" >0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Graduction Allowance</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">House Rent Allowance</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div"> Conveyance Allowance</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Special Allowance</div>
+                <div class="second-div">0</div>
+            </div>
+           
+
+            <div class="earning earningd-div" >
+                <div class="first-div">Total Earnings</div>
+                <div class="second-div">27084</div>
+            </div>
+
+           
+        </div>
+        <div class="slip-part-earnings">
+            <h3>DEDUCTIONS</h3>
+            <div class="earningd-div">
+                <div class="first-div">Provident Fund</div>
+                <div class="second-div">1000</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">LIC</div>
+                <div class="second-div">500</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Professional Tax</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Security Deposite(SD)</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">ESIC Deduction</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">National Schemes</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Others</div>
+                <div class="second-div">200</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Advance</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Income Tax</div>
+                <div class="second-div">0</div>
+            </div>
+            <div class="earning earningd-div">
+                <div class="first-div">Total Deductions</div>
+                <div class="second-div" >1700</div>
+            </div>
+        </div>
+  
+        <div class="slip-part-earnings">
+            <h3>NET PAY</h3>
+            <div class="earningd-div">
+                <div class="first-div">Total Earnings</div>
+                <div class="second-div" >27084</div>
+            </div>
+            <div class="earningd-div">
+                <div class="first-div">Total Deductions</div>
+                <div class="second-div" >1700</div>
+            </div>
+            <div class="earning earningd-div">
+                <div class="first-div">CTC(Net Salary)</div>
+                <div class="second-div">25384</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
